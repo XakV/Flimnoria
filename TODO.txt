@@ -1,0 +1,26 @@
+# Pre-Existing TODO stuff
+- fix ext and fasinfo to report whether a Fedora Talk extension is enabled or
+  disabled (not currently possible, the config setting is only readable by
+  that user, not anybody)
+- function to query the last time the cache was refreshed
+
+## New TODO stuff
+- Fedora's Zodbot lives on value1 in prod, these packages are also installed
+  - supybot-koji
+  - supybot-notify
+  - supybot-pinglists
+  - supybot-fedmsg
+  - packagedb-cli
+  - python-simplejson
+- I think that means that we need to look at these other plugins as well
+  to make sure they are updated to python 3?
+
+- I'm getting this error that I need to look at more
+- Happens after supybot as logged in to fas and downloaded stuff
+
+File "/home/vagrant/.local/lib/python3.6/site-packages/fedmsg/config.py", line 609, in load_config
+    raise ValueError("No config value 'endpoints' found.")
+ValueError: No config value 'endpoints' found.
+
+- this looks like something with fedmsg that needs attention
+
